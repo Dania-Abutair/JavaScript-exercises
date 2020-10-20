@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #4: Formatting text</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+</head>
+<body>
+    
+    <select id="delete">
+        <option value="a">Apple</option>
+        <option value="b">Orange</option>
+        <option value="c">Banana</option>
+        <option value="d"> Cherries</option>
+        <option value="e">Mango</option>
+    </select>
+    <input type="button" id="de" value="remove" >
+<script>
+   $("#de").click(function(){
+    $("#delete option")[0].remove();
+   })
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+</head>
+<body>
+    <input type="button" id="ra" value="image" >
+   <div id="i"> 
+       <img src="./image/one.jpeg">
+   </div>
+<script>
+$("#ra").click(function(){
+
+var image = new Array ();
+image[0] = "image/one.jpeg";
+image[1] = "image/two.jpeg";
+image[2] = "image/three.jpeg";
+image[3] = "image/four.jpg";
+image[4] = "image/five.jpg";
+image[5] = "image/six.jpg";
+var x = Math.floor(image.length * Math.random());
+//document.write("<img src="+image[x]+">");
+ document.getElementById("i").innerHTML="<img src="+image[x]+">";
+});
+</script>
+</body>
+</html>
+
+
+
+
